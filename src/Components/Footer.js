@@ -35,7 +35,7 @@ export default function Footer() {
                         PauseAndPlay();
                     }}><AiOutlinePauseCircle className="icons" /></button>
                     </div>
-                    
+
                     <div className="volume">
                         <button>
                             <BsVolumeUp className="icon-volume hide" id="volumeHigh" />
@@ -87,7 +87,7 @@ function Volume() {
         volumeHigh.setAttribute('class', 'icon-volume hide');
         volumeMute.setAttribute('class', 'icon-volume hide');
     }
-    if (volume == 0) {
+    if (volume === 0) {
         volumeMute.setAttribute('class', 'icon-volume');
         volumeLow.setAttribute('class', 'icon-volume hide');
     }
