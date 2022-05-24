@@ -1,9 +1,6 @@
 footer{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: auto;
     grid-column: 1/3;
     grid-row: 3/4;
@@ -12,6 +9,17 @@ footer{
 footer button{
     background: none;
     border: none;
+}
+.moving{
+    height: 100%;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 .icons{
     width: 50px;
@@ -22,4 +30,51 @@ footer button{
 }
 .icons:hover{
     fill: #df861d;
+}
+#volume{
+    -webkit-appearance: none;
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;  
+    background: white;
+    outline: none;
+}
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #df861d;
+    cursor: pointer;
+}
+.play{
+    height: 50px;
+}
+.play.hide, .pause.hide{
+    display: none;
+}
+
+/* Volume */
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.volume button{
+    height: 25px;
+}
+.icon-volume{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: .5s;
+    fill: white;
+}
+.icon-volume:hover{
+    fill: #df861d;
+}
+.icon-volume.hide{
+    display: none;
 }
